@@ -41,8 +41,9 @@ const questions = [
         name: "license",
         choices: [
             "None",
-            "GNU General Public License v3.0",
+            "GNU GPLv3",
             "MIT License",
+            "The Unlicense"
         ]
     },
     {
@@ -56,7 +57,6 @@ const questions = [
         name: "email"
     },
 ];
-inquirer.prompt(questions)
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
